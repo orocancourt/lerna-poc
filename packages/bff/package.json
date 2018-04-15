@@ -1,6 +1,6 @@
 {
   "name": "randstad-bff",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Randstad YPAM backend for frontend",
   "main": "server.js",
   "author": "Randstad",
