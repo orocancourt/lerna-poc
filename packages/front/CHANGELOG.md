@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/orocancourt/lerna-poc/compare/v1.1.0...v2.0.0) (2018-04-15)
+
+
+* feat: ([fa0418a](https://github.com/orocancourt/lerna-poc/commit/fa0418a))
+
+
+### BREAKING CHANGES
+
+* major change
+
+
+
+
 <a name="1.1.0"></a>
 # [1.1.0](https://github.com/orocancourt/lerna-poc/compare/v1.0.3...v1.1.0) (2018-04-15)
 

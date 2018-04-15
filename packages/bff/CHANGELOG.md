@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/orocancourt/lerna-poc/compare/v1.1.0...v2.0.0) (2018-04-15)
+
+
+
+
+**Note:** Version bump only for package randstad-bff
+
 <a name="1.0.3"></a>
 ## [1.0.3](https://github.com/orocancourt/lerna-poc/compare/v1.0.2...v1.0.3) (2018-04-15)
 
