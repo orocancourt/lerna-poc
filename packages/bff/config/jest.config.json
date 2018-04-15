@@ -1,0 +1,25 @@
+{
+  "rootDir": "..",
+  "resetMocks": true,
+  "moduleFileExtensions": [
+    "js",
+    "json"
+  ],
+  "moduleNameMapper": {
+    "^@/(.*)$": "<rootDir>/src/$1"
+  },
+  "coverageDirectory": "<rootDir>/test/coverage",
+  "collectCoverageFrom": [
+    "src/*/*.{js}",
+    "!src/routes/*.{js}",
+    "!**/node_modules/**"
+  ],
+  "coverageThreshold": {
+    "global": {
+      "branches": 80,
+      "functions": 80,
+      "lines": 80,
+      "statements": 80
+    }
+  }
+}

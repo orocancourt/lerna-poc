@@ -1,0 +1,37 @@
+{
+  "name": "randstad-front",
+  "version": "1.0.0",
+  "description": "Randstad YPAM application to manage medical resources",
+  "main": "bff/server.js",
+  "license": "MIT",
+  "author": "Randstad",
+  "private": true,
+  "scripts": {
+    "build": "cd front && node build/build.js",
+    "install:bff": "cd bff && yarn",
+    "install:front": "cd front && yarn",
+    "install": "yarn run install:front && yarn run install:bff",
+    "lint:bff": "cd bff && yarn run lint",
+    "lint:front": "cd front && yarn run lint",
+    "lint": "yarn run lint:front && yarn run lint:bff",
+    "lint:fix": "(cd front && yarn run lint:fix) && (cd bff && yarn run lint:fix)",
+    "stop": "cd bff && yarn run stop",
+    "start:dev": "cd bff && yarn start:dev",
+    "start:watch": "cd bff && yarn start:watch",
+    "start:bff": "cd bff && yarn start",
+    "start:front": "cd front && yarn start",
+    "start": "yarn run start:bff",
+    "security_check": "(cd front && yarn run security_check) && (cd bff && yarn run security_check)",
+    "test:bff": "(cd bff && yarn test)",
+    "test:front": "(cd front && yarn test)",
+    "test": "yarn run test:front && yarn run test:bff"
+  },
+  "pre-commit": [
+    "lint",
+    "test"
+  ],
+  "devDependencies": {
+    "lerna": "^2.10.1",
+    "pre-commit": "^1.2.2"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "name": "randstad-bff",
+  "version": "1.0.0",
+  "description": "Randstad YPAM backend for frontend",
+  "main": "server.js",
+  "author": "Randstad",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint --ext .js src test",
+    "lint:fix": "eslint --ext .js src test --fix",
+    "stop": "pm2 -s stop Randstad-BFF",
+    "start": "pm2 startOrRestart app.json",
+    "start:dev": "node ./bin/start.js",
+    "start:watch": "nodemon ./bin/start.js",
+    "security_check": "nsp check",
+    "test": "jest --config config/jest.config.json --coverage",
+    "test:unit": "jest --config config/jest.config.json",
+    "test:watch": "jest --config config/jest.config.json --watch"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "dotenv": "^5.0.1",
+    "hapi": "^17.2.3",
+    "lodash": "4.17.5"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jest": "^21.15.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.7.0",
+    "jest": "^22.4.2",
+    "nock": "^9.2.3",
+    "nodemon": "^1.17.3",
+    "nsp": "3.2.1"
+  },
+  "engines": {
+    "node": ">=8.10.0",
+    "npm": "5.6.0",
+    "yarn": "1.5.1"
+  }
+}

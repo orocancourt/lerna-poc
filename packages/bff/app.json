@@ -1,0 +1,6 @@
+{
+  "apps": [{
+    "name": "Randstad-BFF",
+    "script": "bin/start.js"
+  }]
+}

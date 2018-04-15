@@ -1,0 +1,57 @@
+0 silly input []
+1 silly flags { _: [ 'bootstrap' ],
+1 silly flags   'reject-cycles': false,
+1 silly flags   rejectCycles: false,
+1 silly flags   args: [] }
+2 verbose rootPath /home/oro/Workspace/tmp/randstad-front
+3 info version 2.10.1
+4 silly existsSync /home/oro/Workspace/tmp/randstad-front/VERSION
+5 silly initialize attempt
+6 silly npmConfig { registry: undefined,
+6 silly npmConfig   npmClient: 'yarn',
+6 silly npmConfig   npmClientArgs: undefined,
+6 silly npmConfig   mutex: 'network:42424' }
+7 silly initialize success
+8 silly execute attempt
+9 info Bootstrapping 2 packages
+10 silly installInDirOriginalPackageJson /home/oro/Workspace/tmp/randstad-front
+11 silly getExecOpts { cwd: '/home/oro/Workspace/tmp/randstad-front' }
+12 silly installInDir [ 'yarn',
+12 silly installInDir   [ 'install', '--mutex', 'network:42424', '--non-interactive' ] ]
+13 error execute callback with error
+14 error Error: Command failed: yarn install --mutex network:42424 --non-interactive
+14 error warning "workspace-aggregator-e616055f-15d1-4471-8882-00fd9092a017 > randstad-front > @storybook/vue@3.4.1" has unmet peer dependency "babel-runtime@>=6.0.0".
+14 error warning "workspace-aggregator-e616055f-15d1-4471-8882-00fd9092a017 > randstad-front > @storybook/vue@3.4.1" has incorrect peer dependency "vue-loader@14.2.1".
+14 error sh: 1: cd: can't cd to front
+14 error error An unexpected error occurred: "Command failed.
+14 error Exit code: 2
+14 error Command: sh
+14 error Arguments: -c cd front && yarn
+14 error Directory: /home/oro/Workspace/tmp/randstad-front
+14 error Output:
+14 error ".
+14 error error An unexpected error occurred: "Command failed.
+14 error Exit code: 1
+14 error Command: sh
+14 error Arguments: -c yarn run install:front && yarn run install:bff
+14 error Directory: /home/oro/Workspace/tmp/randstad-front
+14 error Output:
+14 error ".
+14 error yarn install v1.5.1
+14 error [1/4] Resolving packages...
+14 error [2/4] Fetching packages...
+14 error info fsevents@1.1.3: The platform "linux" is incompatible with this module.
+14 error info "fsevents@1.1.3" is an optional dependency and failed compatibility check. Excluding it from installation.
+14 error [3/4] Linking dependencies...
+14 error [4/4] Building fresh packages...
+14 error success Saved lockfile.
+14 error $ yarn run install:front && yarn run install:bff
+14 error yarn run v1.5.1
+14 error $ cd front && yarn
+14 error info If you think this is a bug, please open a bug report with the information provided in "/home/oro/Workspace/tmp/randstad-front/yarn-error.log".
+14 error info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+14 error info If you think this is a bug, please open a bug report with the information provided in "/home/oro/Workspace/tmp/randstad-front/yarn-error.log".
+14 error info Visit https://yarnpkg.com/en/docs/cli/install for documentation about this command.
+14 error
+14 error     at Promise.all.then.arr (/home/oro/.nvm/versions/node/v8.11.1/lib/node_modules/lerna/node_modules/execa/index.js:236:11)
+14 error     at <anonymous>

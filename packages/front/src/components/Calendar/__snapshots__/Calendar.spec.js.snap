@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components | Calendar template should match snapshot 1`] = `
+<section
+  id="calendar"
+>
+  <div
+    class="calendar-navigation"
+  >
+    <button
+      class="calendar-navigation-button btn btn--icon"
+      type="button"
+    >
+      <div
+        class="btn__content"
+      >
+        <i
+          aria-hidden="true"
+          class="icon material-icons"
+        >
+          keyboard_arrow_left
+        </i>
+      </div>
+    </button>
+     
+    <h1>
+      février 2017
+    </h1>
+     
+    <button
+      class="calendar-navigation-button btn btn--icon"
+      type="button"
+    >
+      <div
+        class="btn__content"
+      >
+        <i
+          aria-hidden="true"
+          class="icon material-icons"
+        >
+          keyboard_arrow_right
+        </i>
+      </div>
+    </button>
+  </div>
+   
+  <div
+    class="container table text-xs-center pa-0"
+  >
+    <!---->
+     
+    <!---->
+  </div>
+</section>
+`;

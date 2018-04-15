@@ -1,0 +1,33 @@
+# Use same VM as API with the LTS of Node, NPM and Yarn
+image: gitlab.ypam.fr:5005/apiz/pipeline:pipeline_runner
+
+stages:
+  - "Install"
+  - "Lint and Test"
+  - "Build Front"
+  - "Deploy and Start Server"
+
+install:
+  stage: "Install"
+  allow_failure: false
+  script:
+    - yarn
+  cache:
+    key: ${CI_BUILD_REF_NAME}
+    paths:
+    - front/node_modules/
+    - bff/node_modules/
+  artifacts:
+    paths:
+    - front/node_modules/
+    - bff/node_modules/
+
+lint-and-test:
+  stage: "Lint and Test"
+  allow_failure: false
+  script:
+    - yarn run lint:front
+    - yarn run test:front
+    - yarn run lint:bff
+    - yarn run test:bff
+    - yarn run security_check
