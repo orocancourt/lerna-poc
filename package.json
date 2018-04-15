@@ -6,6 +6,9 @@
   "license": "MIT",
   "author": "Randstad",
   "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "cd front && node build/build.js",
     "install:bff": "cd bff && yarn",
