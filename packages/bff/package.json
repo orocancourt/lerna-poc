@@ -1,10 +1,11 @@
 {
   "name": "randstad-bff",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Randstad YPAM backend for frontend",
   "main": "server.js",
   "author": "Randstad",
   "license": "MIT",
+  "private": true,
   "scripts": {
     "lint": "eslint --ext .js src test",
     "lint:fix": "eslint --ext .js src test --fix",

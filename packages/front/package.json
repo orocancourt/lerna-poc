@@ -1,9 +1,10 @@
 {
   "name": "randstad-front",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Randstad YPAM application to manage medical resources",
   "license": "MIT",
   "author": "Randstad",
+  "private": true,
   "scripts": {
     "build": "node build/build.js",
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
